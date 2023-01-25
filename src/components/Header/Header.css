@@ -1,0 +1,27 @@
+#header{
+    margin:0;
+    padding: 0;;
+    color:brown;
+    background-color: rgb(252, 252, 254);
+    height: 50px;
+    width: 100%;
+    
+   
+}
+
+.logo-search{
+    margin:0;
+    padding: 0;
+}
+
+#linkedInLogo{
+    height: 40px;
+    width:40px;
+}
+
+#search{
+   margin:0;
+   height: 40px;
+   width:40px;
+   padding: 0;
+}
