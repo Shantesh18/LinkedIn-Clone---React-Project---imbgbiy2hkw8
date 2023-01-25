@@ -13,7 +13,7 @@
 #login-container > div{
     height: 400px;
     width: 400px;
-    background-color: rgb(184, 68, 180);
+    background-color: rgb(231, 153, 228);
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -39,4 +39,9 @@
 #login-button:hover{
     background-color: rgb(96, 179, 13);
     cursor:pointer;
+}
+
+#error-message{
+    color: rgb(214, 3, 3);
+    font-size: large;
 }

@@ -10,10 +10,17 @@ function Login() {
   const [loginUsername, setLoginUsername]=useState("");
   const [loginPassword, setLoginPassword]=useState("");
   const [login, setLogin]=useState(false);
+  const [errormessage, setErrormessage]=useState("");
 
   const handleLogin=()=>{
-       if(loginUsername==="shantesh18"&&loginPassword==="12345678"){
+      if(loginUsername===""){
+        setErrormessage("* Enter email");
+      }else if(loginPassword===""){
+        setErrormessage("* Enter password");
+      }else if(loginUsername==="shantesh18"&&loginPassword==="12345678"){
         setLogin(true);
+       }else{
+        setErrormessage("* Email or password incorrect");
        }
   }
   return (
@@ -25,13 +32,13 @@ function Login() {
       <Main/>
       <Footer/>
     </div>
-    
     :
     <div id='login-container'>
       <div>
         <div>
           <h1 id='login-header'>Login</h1>
         </div>
+        <div id='error-message'>{errormessage}</div>
         <div>
           <input id='login-username' 
           className='login' 
