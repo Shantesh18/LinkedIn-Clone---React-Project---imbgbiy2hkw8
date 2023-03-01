@@ -1,27 +1,77 @@
-#header{
-    margin:0;
-    padding: 0;;
-    color:brown;
-    background-color: rgb(252, 252, 254);
-    height: 50px;
-    width: 100%;
-    
-   
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffffff;
 }
 
-.logo-search{
-    margin:0;
-    padding: 0;
+.header__left{
+    display: flex;
+    align-items: center;
+
+}
+    
+#logo-search{
+    height: 20px;
+    width:20px;
 }
 
 #linkedInLogo{
-    height: 40px;
-    width:40px;
+    height: 30px;
+    width:30px;
 }
 
+.search{
+    background-color: rgb(240, 238, 238);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    min-width: 220px;
+    padding-left: 10px;
+    border-radius: 5px;
+
+}
 #search{
-   margin:0;
-   height: 40px;
-   width:40px;
-   padding: 0;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    font-size: large;
+    margin-left: 10px;
+}
+
+.header__right{
+    display: flex;
+}
+
+.header__options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 15px;
+    cursor: pointer;
+    position: relative;
+    font-size: 14px;
+    color: #565656;
+}
+
+
+.header__options .MuiAvatar-circular{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.header__options:first-child{
+    color:black;
+}
+
+.header__options:first-child::before{
+    content: '';
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    height: 2px;
+    bottom: -1px;
+    background-color: black;
 }

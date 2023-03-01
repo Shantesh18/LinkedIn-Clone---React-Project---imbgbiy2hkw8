@@ -1,0 +1,63 @@
+.feed{
+    display: flex;
+    flex: 0.7;
+    flex-direction: column;
+    margin: 0 30px;
+}
+
+.feed__input__container{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
+.feed .feed__input{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.feed .feed__input form{
+    display: flex;
+    flex:1;
+    align-items: center;
+}
+
+.feed .feed__input form input[type='text']{
+    flex:1;
+    border-radius: 20px;
+    margin-left: 10px;
+    padding: 0 10px;
+    height: 40px;
+    outline: 0;
+    border: 1px solid #ccc;
+}
+
+.feed .feed__input form input[type='submit']{
+   display: none;
+}
+
+.feed__options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.feed__options .option{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+
+}
+
+.feed__options .option svg{
+   margin-right: 5px;
+
+}
+
+.feed__options .option:hover{
+   background-color: #eee;
+}

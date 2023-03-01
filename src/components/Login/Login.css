@@ -1,47 +1,65 @@
-#login-container{
-
-    margin:0;
-    padding: 0;
-    width: 100vw;
+.login-container{
     height: 100vh;
-    background-color: rgb(228, 230, 230);
+    width: 100vw;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#login-container > div{
-    height: 400px;
+.login-field{
+    margin: 0;
     width: 400px;
-    background-color: rgb(231, 153, 228);
+    height: auto;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 10px;
+    background-color:#fff;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px;
+
+   
 }
 
 .login{
-    width:300px;
-    height: 30px;
-    font-size: large;
-    padding: 5px;
-    margin: 15px;
+    width: 300px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    padding: 10px;
 }
 
-#login-button{
+.login-button{
     border: none;
-    width:310px;
-    height: 40px;
-    background-color: rgb(56, 95, 17);
+    outline: none;
+    width: 321px;
+    margin-top: 10px;
+    background-color: blue;
     color: white;
+    font-size: 20px;
+    padding: 10px;
 }
 
-#login-button:hover{
-    background-color: rgb(96, 179, 13);
-    cursor:pointer;
+.login-button:hover{
+    background-color: rgb(20, 197, 35);
+    cursor: pointer;
 }
 
-#error-message{
-    color: rgb(214, 3, 3);
-    font-size: large;
+.linkedin-logo{
+    width: 250px;
+    height: auto;
+}
+
+.span-click{
+    color: blue;
+}
+.span-click:hover{
+    cursor: pointer;
+}
+
+.error-message{
+    color: red;
 }

@@ -1,0 +1,7 @@
+.app__body{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    padding: 10px 10%;
+    background-color: #f2f0f0;
+}
