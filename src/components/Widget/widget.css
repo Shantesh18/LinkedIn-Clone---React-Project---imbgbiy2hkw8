@@ -62,4 +62,13 @@
     margin-bottom: 10px;
     position: sticky;
     top:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.widget__footer .MuiAvatar-circular{
+   width: 100px;
+   height: 100px;
 }

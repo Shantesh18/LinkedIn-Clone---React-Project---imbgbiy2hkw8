@@ -58,11 +58,15 @@
     top: 30px;
 }
 
+.hash{
+    color: #484848;
+}
+
 .hash span{
-    font-weight: bold;
-    font-size: 18px;
+    font-weight: 1000;
+    font-size: 20px;
     margin-right: 5px;
-    color: #333;
+    color: #121212;
 }
 
 .sidebar__recent p{

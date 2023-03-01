@@ -7,6 +7,7 @@ import YouTubeIcon from '@material-ui/icons/YouTube';
 import './feed.css';
 import Post from './Post';
 import UserContext from '../UserContext';
+import FlipMove from 'react-flip-move';
 
 function Feed() {
 
@@ -77,8 +78,10 @@ function Feed() {
             </div>
         </div>
         <div>
-          { 
-            posts.map((elem)=>{
+          
+            <FlipMove>
+            { 
+                 posts.map((elem)=>{
                    return (
                      <Post name={elem.name} 
                     description={elem.description}
@@ -86,7 +89,10 @@ function Feed() {
                     imgUrl={elem.imgUrl}/>
                   )
                 })
-          }
+            }
+            </FlipMove>
+           
+         
         </div>
     </div>
   )

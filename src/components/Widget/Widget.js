@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AnnouncementIcon from '@material-ui/icons/Announcement';
 import './widget.css'
+import { Avatar } from '@material-ui/core';
+import UserContext from '../UserContext';
 
 function Widget() {
+    const {user, setUser} = useContext(UserContext);
   return (
     <div className='widget'>
         <div className='widget__header'>
@@ -32,7 +35,8 @@ function Widget() {
             </div>
         </div>
         <div className='widget__footer'>
-            kjehdoeiwh
+                <h4>Ads</h4>
+                <Avatar src={user.photoUrl}/>
         </div>
     </div>
   )
