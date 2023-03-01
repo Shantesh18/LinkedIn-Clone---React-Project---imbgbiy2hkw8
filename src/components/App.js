@@ -13,12 +13,14 @@ import { BrowserRouter, Route, Link,Routes } from 'react-router-dom';
 const App = () => {
 
   const [user, setUser]=useState(null);
-
+  
   useEffect(() => {
+
     localStorage.getItem("auth") ?
-        setUser(JSON.parse(localStorage.getItem("auth")))
-         :
-        "";
+    setUser(JSON.parse( localStorage.getItem("auth")))
+     :
+    "";
+        
         console.log(user);
   }, [])
   

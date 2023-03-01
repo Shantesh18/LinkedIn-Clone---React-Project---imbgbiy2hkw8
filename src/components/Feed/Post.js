@@ -6,11 +6,12 @@ import ThumbUpIcon from '@material-ui/icons/ThumbUp';
 import CommentIcon from '@material-ui/icons/Comment';
 import ShareIcon from '@material-ui/icons/Share';
 import SendIcon from '@material-ui/icons/Send';
+ 
 
 
-const Post = forwardRef(({name, description, message, imgUrl},ref)=> {
+const Post = forwardRef(({key,name, description, message, imgUrl},ref)=> {
   return (
-    <div className='posts' ref={ref}>
+    <div className='posts' ref={ref} key={key}>
         <div className='post__header'>
             <div className='post__header__left'>
                 <Avatar src={imgUrl}/>

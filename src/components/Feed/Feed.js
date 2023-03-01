@@ -77,16 +77,20 @@ function Feed() {
                 </div>
             </div>
         </div>
+        
         <div>
           
-            <FlipMove>
+        <FlipMove>
             { 
                  posts.map((elem)=>{
                    return (
-                     <Post name={elem.name} 
+                    <FlipMove>
+                     <Post key={elem.name}
+                      name={elem.name} 
                     description={elem.description}
                     message={elem.message}
                     imgUrl={elem.imgUrl}/>
+                    </FlipMove>
                   )
                 })
             }
@@ -94,6 +98,7 @@ function Feed() {
            
          
         </div>
+        
     </div>
   )
 }

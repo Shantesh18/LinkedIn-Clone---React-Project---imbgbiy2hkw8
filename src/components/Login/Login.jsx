@@ -125,7 +125,16 @@ function Login() {
                 </button>
               </div>
               <div>
-                <p>New user? <span className='span-click' onClick={()=>setLogin(false)}>Sign up</span></p>
+                <p>New user? <span className='span-click' onClick={()=>{
+                  setLogin(false); 
+                  setErrormessage("");
+                  setEmail("");
+                  setName("");
+                  setPhotoUrl("");
+                  setPassword("");
+                  setLoginUsername("");
+                  setLoginPassword("");
+                  }}>Sign up</span></p>
               </div>
         </div>
          
@@ -177,7 +186,16 @@ function Login() {
           </button>
         </div>
         <div>
-          <p>Already have an account? <span className='span-click' onClick={()=>setLogin(true)}>Sign In</span></p>
+          <p>Already have an account? <span className='span-click' onClick={()=>{
+             setLogin(true);
+             setErrormessage("");
+             setEmail("");
+             setName("");
+             setPhotoUrl("");
+             setPassword("");
+             setLoginUsername("");
+             setLoginPassword("");
+             }}>Sign In</span></p>
         </div>
       </div>
     }    

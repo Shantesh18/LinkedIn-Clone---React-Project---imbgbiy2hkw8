@@ -9,6 +9,7 @@ import './Header.css'
 import { Avatar } from '@material-ui/core';
 import { useContext } from 'react';
 import UserContext from '../UserContext';
+import SearchIcon from '@material-ui/icons/Search';
 
 function Header() {
 
@@ -16,7 +17,7 @@ function Header() {
   return (
         <div id="header" className='nav'>
           <div className='header__left'>
-            <img id='linkedInLogo' src="src\logos\linkedInLogo.png" alt='logo'/>
+            <SearchIcon/>
             <div className='search'>
               <img id='logo-search' src="src\logos\search-icon.webp" alt='logo'/>
               <input id='search' type={'text'} placeholder="search"/>
