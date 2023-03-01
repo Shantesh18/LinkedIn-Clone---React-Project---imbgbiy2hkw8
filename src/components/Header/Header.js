@@ -17,9 +17,9 @@ function Header() {
   return (
         <div id="header" className='nav'>
           <div className='header__left'>
-            <SearchIcon/>
+            <img id='linkedInLogo' src='https://cdn-icons-png.flaticon.com/512/174/174857.png' alt='img'/>
             <div className='search'>
-              <img id='logo-search' src="src\logos\search-icon.webp" alt='logo'/>
+             <SearchIcon/>
               <input id='search' type={'text'} placeholder="search"/>
             </div>
             
